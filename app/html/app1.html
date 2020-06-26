@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>bootstrap demo</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+          #piechart_3d{
+            
+          }
+            #carouselExampleCaptions{
+                background-color: black;
+                
+                width: 100%;
+            
+            }
+            body{
+                background-color: white;
+            }
+
+            footer{
+              background-color: skyblue;
+              margin-top: 50px;
+              margin-left: 10px;
+              margin-right: 10px;
+              margin-bottom: 10px;
+
+            }
+            
+        </style>
+
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+       <script type="text/javascript">
+     /* google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['income',     1],
+          ['expenses',      2],
+          ['balance',  2],
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }*/
+ </script>
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" href="#">
+       <img src="240_F_326428531_NztOJVIJIUN6M6yMZtDn43kvswN3jJvx.jpg" width="30" height="30" class="d-inline-block align-top" alt="save-money" id="imgcheckandchange" onclick="home()">
+        SaveMoney
+    </a>
+
+    <div class="navbar-nav">
+      <a href="login.html" class="nav-item nav-link">Login</a>
+    </div> 
+</nav>
+<!--<div class="container">
+  <div id="piechart_3d" style="center width: 400px; height: 400px;">
+
+  </div>
+     
+</div>-->
+<hr/>
+
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      <h5>Main balanace: 00$</h5> 
+    </div>
+     <div class="col">
+      <h5>Income:00$</h5>
+     </div>
+      <div class="col">
+        <h5>Expenses:00$ </h5>    
+      </div>
+  </div>
+</div>
+
+       
+       <hr/>
+
+<div class="container">
+       <div class="row">
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <a href="Add-income.html">   <img src="240_F_204828797_mGWtxIqMSbdRF27GSraOhsR9LCp2y30b.jpg"  alt="add income" width="200"height="80" id="add-money" onclick="add()"></a>
+
+              <h5 class="card-title">Add-income</h5>
+              <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <a href="Add-expenses.html"> <img src="240_F_304051050_QNAQbFIKZk1eLLNuSmbyAtCvg91xnUv4.jpg" alt="add Expenses" width="200"height="80"></a>
+
+              <h5 class="card-title">Add-expenses</h5>
+              <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <a href="Reports.html" >  <img src="240_F_307254609_3JMsfMLbsGRAdDkr1vCQUlQuX7hDtK1m.jpg" alt="Reports" width="200"height="80"></a>
+
+              <h5 class="card-title">Reports</h5>
+             <!--- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <a href="All-transaction.html">  <img src="240_F_209861750_nj9LnTcDbDIVOkJg7EiE6E9fZ7U31Sjf.jpg" alt="All Transaction" width="200"height="80"></a>
+
+              <h5 class="card-title">Transcation</h5>
+             <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+        </div>
+    </div>
+</div>      
+      
+  <!--    
+
+<div class="container">
+  <div class="row">
+    <div class="col" >
+         <a href="Add-income.html">   <img src="240_F_204828797_mGWtxIqMSbdRF27GSraOhsR9LCp2y30b.jpg"  alt="add income" width="200"height="80" id="add-money" onclick="add()"></a>
+            <p>add-income</p>
+  
+
+
+    </div>
+
+      <div class="col">
+           <a href="Add-expenses.html"> <img src="240_F_304051050_QNAQbFIKZk1eLLNuSmbyAtCvg91xnUv4.jpg" alt="add Expenses" width="200"height="80"></a>
+            <p>add Expenses</p>
+
+      </div>
+          
+      <div class="col">
+           <a href="Reports.html" >  <img src="240_F_307254609_3JMsfMLbsGRAdDkr1vCQUlQuX7hDtK1m.jpg" alt="Reports" width="200"height="80"></a>
+            <p>Reports</p>
+
+      </div>
+      <div class="col">
+          <a href="All-transaction.html">  <img src="240_F_209861750_nj9LnTcDbDIVOkJg7EiE6E9fZ7U31Sjf.jpg" alt="All Transaction" width="200"height="80"></a>
+            <p>All Transaction</p>
+
+              
+      </div>
+
+  </div>
+</div>  -->
+      
+      
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
+          esse
+          quasi, veritatis totam voluptas nostrum.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="#!">PROJECTS</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">ABOUT US</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">BLOG</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">AWARDS</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+      
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+
+  <hr/>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+               
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        
+    </script>
+    </body>
+</html>
